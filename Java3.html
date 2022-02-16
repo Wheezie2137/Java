@@ -1,0 +1,31 @@
+<html>
+<script>
+function addition(){
+
+    if(txt1.value == ""){
+        alert("First number is missing.")
+    }
+    else {
+        if(txt2.value== ""){
+            alert("You have missed the second number")
+        } else {
+            let no1 =txt1.value; 
+            let no2 = txt2.value;
+            let result = parseInt(no1) + parseInt(no2);
+            txt3.value =result
+        }
+    }
+}
+
+</script>
+First number: <input id = "txt1" type = "text">
+<br>
+Second number: <input id = "txt2" type = "text">
+<br>
+<input ID = "btn"
+type = "button"
+value = "+"
+onClick = "addition()">
+<br>
+Result: <input id = "txt3" type = "text">
+</html>

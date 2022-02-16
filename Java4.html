@@ -1,0 +1,106 @@
+<html>
+<script>
+function addition(){
+
+    if(txt1.value == ""){
+        alert("First number is missing.")
+        txt1.focus()
+    }
+    else {
+        if(txt2.value== ""){
+            alert("You have missed the second number")
+            txt2.focus()
+        } else {
+            let no1 =txt1.value; 
+            let no2 = txt2.value;
+            let result = parseInt(no1) + parseInt(no2);
+            txt3.value =result
+        }
+    }
+}
+
+function subtraction(){ 
+    
+    if(txt1.value == ""){
+        alert("First number is missing.")
+        txt1.focus()
+    }
+    else {
+        if(txt2.value== ""){
+            alert("You have missed the second number")
+            txt2.focus()
+        } else {
+            let no1 =txt1.value; 
+            let no2 = txt2.value;
+            let result = parseInt(no1) - parseInt(no2);
+            txt3.value =result
+        }
+    }
+}
+function divide(){ 
+    
+    if(txt1.value == ""){
+        alert("First number is missing.")
+        txt1.focus()
+    }
+    else {
+        if(txt2.value== ""){
+            alert("You have missed the second number")
+            txt2.focus()
+        } else {
+            let no1 =txt1.value; 
+            let no2 = txt2.value;
+            let result = parseInt(no1) / parseInt(no2);
+            txt3.value =result
+        }
+    }
+}
+
+function multiply(){
+
+    if(txt1.value == ""){
+        alert("First number is missing.")
+        txt1.focus()
+    }
+    else {
+        if(txt2.value== ""){
+            alert("You have missed the second number")
+            txt2.focus()
+        } else {
+            let no1 =txt1.value; 
+            let no2 = txt2.value;
+            let result = parseInt(no1) * parseInt(no2);
+            txt3.value =result
+        }
+    }
+}
+
+</script>
+First number: <input id = "txt1" type = "text">
+<br>
+Second number: <input id = "txt2" type = "text">
+<br>
+
+<input ID = "plusbtn"
+type = "button"
+value = "+"
+onClick = "addition()">
+
+<input ID = "minusbtn"
+type = "button"
+value = "-"
+onClick = "subtraction()">
+
+<input ID = "divbtn"
+type = "button"
+value = "/"
+onClick = "divide()">
+
+<input ID = "timesbtn"
+type = "button"
+value = "x"
+onClick = "multiply()">
+
+<br>
+Result: <input id = "txt3" type = "text">
+</html>
